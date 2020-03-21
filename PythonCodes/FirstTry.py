@@ -11,9 +11,7 @@ import cv2
 img = cv2.imread("download.jpg", 1)  #reading image
 print(img)#printing its Array form
 resized = cv2.resize(img, (int(img.shape[1]*2), int(img.shape[0]*2)))  #resizing
-
 cv2.imshow("Python", resized)  #displaing image
-
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
